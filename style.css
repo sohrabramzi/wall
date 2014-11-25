@@ -1,0 +1,187 @@
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  background-color: #DDD;
+  background: ;
+}
+
+.login {
+ padding: 30px;
+ margin-left: 150px;
+}
+ .home {
+ padding: 30px;
+ margin-left: 150px;
+}
+
+ .profiel {
+   background-color: #EEE;
+   border: 2px solid #AAA;
+
+ }
+
+ .post form {
+   background-color: rgba(134,136,119,0.5);
+
+ }
+form input{
+  display: inline;
+}
+#blauw{
+  background-color: rgba(134,136,119,0.7);
+
+
+}
+.comment form {
+  margin: 0px;
+}
+
+h1{
+  margin-top: 20px;
+  padding-left: 100px;
+  font-size: 60px;
+  color: white;
+}
+img{
+  width: 15px;
+  margin: 5px;
+}
+li{
+  display: inline;
+  font-size: 20px;
+  border: 2px solid #BBB;
+  margin-left: 15px;
+  font-family: Helvetica;
+  border-radius: 3px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a.hover{
+  text-decoration: underline;
+}
+
+.postblock{
+  background-color: #EEE;
+  margin-bottom: 25px;
+  border: 1px solid #DDD;
+  box-shadow: 1px 1px 5px #DDD;
+
+}
+p.postblock{
+  font-size: 20px;
+  color: black;
+  padding: 5px;
+  margin: 0px;
+  font-size: 12pt;  
+  color: #222;
+  font-family: Helvetica;
+  border: none;
+  border-top: 1px solid #DDD;
+  box-shadow: none;
+}
+
+p.comment{
+  font-size: 20px;
+  color: black;
+  padding-left: 30px;
+  font-size: 12pt;  
+  color: #222;
+  font-family: Helvetica;
+  border: none;
+  border-top: 1px solid #DDD;
+  box-shadow: none;
+  padding-top: 25px;
+  margin-bottom: 0px;
+}
+
+.delete {
+  margin-left: 30px;
+
+}
+
+h2{
+  margin-top: 20px;
+  padding-left: 100px;
+  font-size: 50px;
+  color: black;
+}
+p{
+  font-size: 30px;
+  color: black;
+  padding-left: 100px;
+
+}
+
+.wijzigpost{
+  float: right;
+  color: black;
+}
+
+p.home{
+  font-size: 20px;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+
+}
+p.homepage{
+  font-size: 20px;
+  color: #555;
+  font-size: 14pt;
+  padding: 5px;
+  padding-left: 15px;
+  margin: 0px;
+
+}
+
+label{
+  display: block;
+}
+.register input{
+    width: 300px;
+}
+.register{
+  font-size: 15px;
+  padding-left: 30px; 
+  padding-top: 15px; 
+}
+.button2{
+   margin-left: 30px; 
+}
+
+.register input{
+
+  margin-bottom: 10px;
+}
+
+
+
+h3{
+  margin-top: 20px;
+  padding-left: 30px;
+  font-size: 30px;
+  color: black;
+}
+
+
+h3.post-user{
+  margin: 0;
+  padding: 5px;
+  color: #444;
+  font-family: Calibri;
+  font-weight: 18px;
+}
+
+h4.post-user{
+
+  padding-left: 30px;
+  color: #444;
+  font-family: Calibri;
+  font-weight: 10px;
+  position: absolute;
+  margin-top: 5px;
+}
+
+
