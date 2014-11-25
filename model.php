@@ -151,42 +151,6 @@ class controller
 		header("Location: index.php");
 	}
 
-	function getLikes($post_id,$type)
-	{
-		$stmt = $this->pdo->prepare("SELECT * FROM `like` JOIN gebruiker ON `like`.gebruiker_id = gebruiker.id JOIN persoon ON `like`.gebruiker_id = persoon.id WHERE post_id = '".$post_id."' AND post_type = '".$type."'"); 
-   		$stmt->execute();
-   		$result = $stmt->fetchAll();
-   		return $result;
-	}
-
-	function checkIfLiked($postid)
-	{
-		$stmt = $this->pdo->prepare("SELECT * FROM `like` WHERE gebruiker_id = '".$_SESSION['gebruiker']."' AND post_id = '".$postid."'"); 
-   		$stmt->execute();
-   		$result = $stmt->fetchAll();
-   		if ($result) {
-   			return true;
-   		} else {
-   			return false;
-   		}
-	}
-
-	function like($user, $postid, $type)
-	{
-		if (!$this->checkIfLiked($postid)) {
-			$stmt = $this->pdo->prepare("INSERT INTO `like` (`gebruiker_id`, `post_id`, `post_type`) VALUES ('$user', '$postid', '$type')"); 
-   			$stmt->execute();
-   		}
-   		header("Location: index.php");
-	}
-
-	function unlike($user, $postid)
-	{
-		$stmt = $this->pdo->prepare("DELETE FROM `like` WHERE  `post_id`='$postid' AND `gebruiker_id`='$user'"); 
-		$stmt->execute();
-		header("Location: index.php");
-	}
-
 
 
 }

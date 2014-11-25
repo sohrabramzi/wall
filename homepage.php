@@ -46,6 +46,7 @@
 						$tpl->assign('VOLLEDIGNAAM', $post['voornaam'].' '.$post['achternaam']);
 						$tpl->assign('CONTENT', ucfirst($post['content']));	
 						$tpl->assign('ID', $post['post_id']);
+						$tpl->assign('POSTID', $post['post_id']);
 						$tpl->assign('GID', $post['gebruiker_id']);
 						if ($post['gebruiker_id'] == $_SESSION['gebruiker']) {
 							$tpl->newBlock('delete');
@@ -65,7 +66,7 @@
 						
 			}	
 
-				$tpl->assign('ID', $post['post_id']);
+				
 						
 			}
 			break;
